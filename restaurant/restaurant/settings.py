@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'food.apps.FoodConfig',
     'user.apps.UserConfig',
+    'bootstrap',
+    'fontawesome',
 ]
 
 MIDDLEWARE = [
