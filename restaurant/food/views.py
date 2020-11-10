@@ -1,9 +1,11 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 from food.forms import FoodForm
 from food.models import Food
 
 
+@login_required
 def create_food(request):
     if request.method == "POST":
         form = FoodForm(request.POST, request.FILES)
